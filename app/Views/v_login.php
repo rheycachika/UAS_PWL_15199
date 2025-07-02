@@ -23,8 +23,8 @@ $password = [
         <!-- Logo -->
         <div class="d-flex justify-content-center py-4">
           <a href="index.html" class="logo d-flex align-items-center w-auto">
-            <img src="<?php echo base_url() ?>NiceAdmin/assets/img/logo.png" alt="">
-            <span class="d-none d-lg-block">Toko Azril</span>
+      <img src="<?= base_url('img/logoku.png') ?>" alt="LogoKu" style="height: 100px; width: auto;">
+            <span class="d-none d-lg-block">My Store</span>
           </a>
         </div>
         <!-- End Logo -->
@@ -65,7 +65,7 @@ $password = [
                     <div class="invalid-feedback">Please enter your password!</div>
                 </div>
                 <div class="col-12">
-                    <?= form_submit('submit', 'Login', ['class' => 'btn btn-primary w-100']) ?>
+                    <?= form_submit('submit', 'Login', ['class' => 'btn btn-pink']) ?>
                 </div>
 
             <?= form_close() ?>

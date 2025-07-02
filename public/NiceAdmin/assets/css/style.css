@@ -15,17 +15,17 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
+  background: #ffe6f1;
   color: #444444;
 }
 
 a {
-  color: #4154f1;
+  color: #f472b6;
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #ec4899;
   text-decoration: none;
 }
 
@@ -365,8 +365,8 @@ h6 {
 }
 
 .logo img {
-  max-height: 26px;
-  margin-right: 6px;
+  height: 80px !important; /* atau ukuran yang kamu mau */
+  width: auto;
 }
 
 .logo span {
@@ -461,7 +461,7 @@ h6 {
   list-style: none;
 }
 
-.header-nav>ul {
+.header-nav > ul {
   margin: 0;
   padding: 0;
 }
@@ -609,7 +609,7 @@ h6 {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0px 20px rgb(252, 188, 240);
   background-color: #fff;
 }
 
@@ -630,7 +630,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   #main,
   #footer {
     margin-left: 300px;
@@ -644,7 +643,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   .toggle-sidebar #main,
   .toggle-sidebar #footer {
     margin-left: 0;
@@ -674,7 +672,7 @@ h6 {
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
-  color: #899bbd;
+  color: #4481f3;
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
@@ -684,9 +682,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: #ec4899 !important; /* teks pink */
   transition: 0.3;
-  background: #f6f9ff;
+  background: #ffe6f1;
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -694,7 +692,7 @@ h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4154f1;
+  color: #ec4899 !important;
 }
 
 .sidebar-nav .nav-link.collapsed {
@@ -703,16 +701,16 @@ h6 {
 }
 
 .sidebar-nav .nav-link.collapsed i {
-  color: #899bbd;
+  color: #ffe6f1;
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
+  color: #ec4899 !important;
   background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover i {
-  color: #4154f1;
+  color: #ec4899 !important;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -750,11 +748,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: #ec4899 !important;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: #ec4899 !important;
 }
 
 /*--------------------------------------------------------------
@@ -883,7 +881,7 @@ h6 {
 }
 
 /* News & Updates */
-.dashboard .news .post-item+.post-item {
+.dashboard .news .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -1149,7 +1147,7 @@ h6 {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #4154f1;
   border: 0;
   padding: 10px 30px;
@@ -1158,7 +1156,7 @@ h6 {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -1230,4 +1228,47 @@ h6 {
   text-align: center;
   font-size: 13px;
   color: #012970;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: #fde2ee !important; /* baby pink */
+  color: #ec4899 !important;
+}
+
+.sidebar-nav .nav-link.active i {
+  color: #ec4899 !important;
+}
+
+.sidebar-nav .nav-link:not(.active):hover {
+  background-color: #fdeff5 !important; /* hover juga baby pink */
+}
+
+/* Tombol Beli jadi pink */
+.btn-pink {
+  background-color: #f472b6;
+  border: none;
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: #ec4899;
+  color: white;
+}
+
+/* Tombol Login jadi pink */
+.btn-pink {
+  background-color: #f9a8d4;
+  color: white;
+  font-weight: bold;
+  width: 100%; /* biar penuh */
+  display: block; /* biar bisa diatur width-nya */
+  text-align: center; /* teks di tengah */
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.btn-pink:hover {
+  background-color: #f472b6;
 }

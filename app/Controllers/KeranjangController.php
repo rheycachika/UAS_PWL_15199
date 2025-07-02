@@ -7,6 +7,6 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class KeranjangController extends BaseController {
     public function index() {
-        return view('content/v_keranjang');
+        return view('v_keranjang');
     }
 }
